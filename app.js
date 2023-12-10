@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+//specific port requirement for render hosting
+const port = process.env.port || 3030;
 
 //countries API json data
 let countries = {
